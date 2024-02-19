@@ -1,0 +1,154 @@
+/* root */
+*,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  padding: 0;
+}
+
+:root {
+  --color-primary: #219f95;
+  --color-title: #234894;
+  --color-white: #ffff;
+  --color-description: #696969;
+  --color-box: #afcedd;
+  --color-title2: #1e1e1e;
+}
+
+.body {
+  max-width: 1140px;
+  margin: 0;
+}
+
+/* title section */
+.section__title {
+  margin-right: 0.7rem;
+}
+
+.container {
+  margin: 2rem;
+  color: var(--color-title2);
+}
+
+/* button */
+
+.btn {
+  border-radius: 8px;
+  outline: 0;
+  border: 0;
+  padding: 0.8rem 0.9rem;
+  cursor: pointer;
+  text-align: center;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  white-space: nowrap;
+  margin-right: 1rem;
+}
+
+/* box request */
+
+.request-box {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+@media screen and (min-width: 400px) {
+  .request-box {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+  .section__title {
+    margin-right: 0.7rem;
+  }
+}
+@media screen and (min-width: 750px) {
+  .request-box {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .btn {
+    padding: 1.2rem 1.5rem;
+  }
+
+  .section__title {
+    margin-right: 0.9rem;
+  }
+}
+
+.request-items {
+  margin: 1rem;
+}
+
+.request__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.request__number {
+  width: 30px;
+  height: 30px;
+  border: 0 solid var(--color-title);
+  background-color: var(--color-box);
+  border-radius: 2px;
+  margin-left: 0.4rem;
+  text-align: center;
+}
+
+.upload__doc {
+  margin-top: 0.15rem;
+  padding-right: 0.3rem;
+  color: var(--color-title);
+  font-size: 1rem;
+}
+
+.text {
+  display: flex;
+  flex-direction: row;
+}
+
+.membership {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  margin: 1rem 0.2rem;
+}
+.membership__title {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.membership__desc {
+  font-size: 0.8rem;
+  color: var(--color-description);
+}
+
+.information {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.info__align {
+  display: flex;
+  flex-direction: row;
+}
+
+.info__profile {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  align-self: center;
+  margin-left: 0.4rem;
+}
+.info__name {
+  font-weight: 700;
+  font-size: 0.8rem;
+  align-self: center;
+  margin-right: 0.3rem;
+  color: var(--color-title2);
+}
